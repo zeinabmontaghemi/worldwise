@@ -1,16 +1,3 @@
 {
-  "cities": [
-    {
-      "cityName": "Villafranca de Ebro",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-08-27T13:56:23.073Z",
-      "notes": "m",
-      "position": {
-        "lat": "41.593178203083106",
-        "lng": "-0.5727520436984058"
-      },
-      "id": 1
-    }
-  ]
+  "cities": []
 }
