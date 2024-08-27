@@ -1,28 +1,3 @@
 {
-  "cities": [
-    {
-      "cityName": "Terenozek",
-      "country": "Kazakhstan",
-      "emoji": "🇰🇿",
-      "date": "2024-08-27T10:51:42.672Z",
-      "notes": "aaaaaaa",
-      "position": {
-        "lat": "45.47095727074351",
-        "lng": "65.39062500000001"
-      },
-      "id": 1
-    },
-    {
-      "cityName": "Tura",
-      "country": "Russian Federation (the)",
-      "emoji": "🇷🇺",
-      "date": "2024-08-27T10:51:53.746Z",
-      "notes": "aaaa",
-      "position": {
-        "lat": "61.94339707036793",
-        "lng": "103.00781250000001"
-      },
-      "id": 2
-    }
-  ]
+  "cities": []
 }
