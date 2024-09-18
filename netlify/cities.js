@@ -1,9 +1,9 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
 const dataFilePath = path.resolve(__dirname, "../../data/cities.json");
 
-exports.handler = async function (event) {
+exports.handler = async function (event, context) {
   const method = event.httpMethod;
 
   if (method === "GET") {
