@@ -3,7 +3,7 @@ import path from "path";
 
 const dataFilePath = path.resolve(__dirname, "../../data/cities.json");
 
-export async function handler(event) {
+export async function handler(event, context) {
   const method = event.httpMethod;
 
   if (method === "GET") {
@@ -19,10 +19,12 @@ export async function handler(event) {
 
   if (method === "POST") {
     const newCity = JSON.parse(event.body);
-    const cities = JSON.parse(fs.readFileSync(dataFilePath, "utf-8"));
-    cities.push(newCity);
+    const fileContent = fs.readFileSync(dataFilePath, "utf-8");
+    const citiesData = JSON.parse(fileContent);
 
-    fs.writeFileSync(dataFilePath, JSON.stringify(cities, null, 2));
+    citiesData.cities.push(newCity);
+
+    fs.writeFileSync(dataFilePath, JSON.stringify(citiesData, null, 2));
 
     return {
       statusCode: 201,
