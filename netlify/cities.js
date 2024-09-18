@@ -1,9 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const dataFilePath = path.resolve(__dirname, "../../data/cities.json");
-
-exports.handler = async function (event, context) {
+export async function handler(event, context) {
   const method = event.httpMethod;
 
   if (method === "GET") {
@@ -37,4 +35,4 @@ exports.handler = async function (event, context) {
     statusCode: 405,
     body: JSON.stringify({ message: "Method Not Allowed" }),
   };
-};
+}
