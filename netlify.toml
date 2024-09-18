@@ -1,9 +1,8 @@
 [build]
   command = "npm run build"
-  publish = "build"
-  functions = "netlify/functions"
+  publish = "dist"  # Make sure 'dist' is used here, not 'build'
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
+  from = "/*"
+  to = "/index.html"
   status = 200
