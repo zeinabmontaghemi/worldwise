@@ -7,7 +7,7 @@ import {
 } from "react";
 
 // const BASE_URL = "http://localhost:9000";
-const BASE_URL = "/api";
+const BASE_URL = "https://worldwize-zeinab.netlify.app/.netlify/functions";
 
 const CitiesContext = createContext();
 
