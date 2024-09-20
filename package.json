@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "json-server --watch data/cities.json --port $PORT --delay 500",
-    "start": "npm run server"
+    "start": "json-server --watch data/cities.json --port $PORT --delay 500"
   },
   "dependencies": {
     "json-server": "^0.17.4",
