@@ -8,10 +8,10 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server": "json-server --watch data/cities.json --port $PORT --delay 500",
-    "start": "json-server --watch data/cities.json --port $PORT --delay 500"
+    "server": "json-server --watch data/cities.json --port 9000 --delay 500 & node server.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "json-server": "^0.17.4",
     "leaflet": "^1.9.4",
     "prop-types": "^15.8.1",
