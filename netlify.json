@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/data/cities.json"
+      "dest": "https://worldwise-back.onrender.com/api/$1"
     },
     {
       "src": "/(.*)",
